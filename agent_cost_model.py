@@ -95,7 +95,7 @@ if __name__ == "__main__":
 
     # Configuration variables
     SAMPLE = 1_000_000
-    GUARDRAIL_MULTIPLIER = 2.0
+    GUARDRAIL_MULTIPLIER = 2.0 # to account for multiple guardrail checks per turn - assuming 2 for this analysis
     MEAN_DATA_INPUT_TOKENS = 200
     STD_DATA_INPUT_TOKENS = 20
     MEAN_BASE_OUTPUT_TOKENS = 150
