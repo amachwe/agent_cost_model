@@ -45,6 +45,7 @@ def single_turn_model_with_guardrails(total_input_tokens_base: int, total_input_
     """
     Calculate the cost of using the model based on token usage including guardrail costs.
     Guardrails - are assumed to process user input + data and output + input data for context.
+    Multiplier - to account for multiple guardrail checks per turn.
     """
     base_input = total_input_tokens_base* model.ACTUAL_INPUT_TOKEN_COST
     input_cost = total_input_tokens_data * model.ACTUAL_INPUT_TOKEN_COST
@@ -169,3 +170,12 @@ if __name__ == "__main__":
 
     plt.title(f"Agent Cost Analysis {cost_model.MODEL_NAME}")
     plt.show()
+
+    
+    
+
+    
+
+    
+
+
